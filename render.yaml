@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: casson-api
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+
+
+
+
+
+
