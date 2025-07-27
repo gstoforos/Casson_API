@@ -36,7 +36,8 @@ def fit_casson(shear_rates, shear_stresses, flow_rate=1, diameter=1, density=1, 
     else:
         q_critical = 0
 
-    equation = f"τ² = {tau0:.3f}² + 2·μ·γ̇"
+    equation = f"√τ = √{tau0:.3f} + √({k:.3f}·γ̇)"
+
 
     return {
         "equation": equation,
